@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Grapple Probe RPi Pico Demo (openocd)",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build rust-pico (debug)",
+            "executable": "${workspaceFolder}/rust-pico/target/thumbv6m-none-eabi/debug/grapple-probe-pico-demo",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "serverpath": "${env:HOME}/opt/openocd-picoprobe/bin/openocd",
+            "device": "RP2040",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/rp2040.cfg",
+            ],
+            "openOCDLaunchCommands": ["adapter speed 5000", "init", "reset halt"],
+            "svdFile": "${workspaceFolder}/RP2040.svd",
+        }
+    ]
+}
