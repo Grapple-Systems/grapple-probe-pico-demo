@@ -1,6 +1,5 @@
-//! This example test the RP Pico on board LED.
-//!
-//! It does not work with the RP Pico W board. See wifi_blinky.rs.
+// Copyright (c) 2025 Grapple Systems. All rights reserved.
+// SPDX-License-Identifier: Apache-2.0
 
 #![no_std]
 #![no_main]
