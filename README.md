@@ -1,6 +1,6 @@
 # Grapple Probe Demo for RPi Pico
 
-This project contains a demo to show how to use the Grapple Probe to debug a Raspberry Pi Pico 1.
+This project contains a demo to show how to use the Grapple Probe to debug a Raspberry Pi Pico.
 
 ## Connecting the Pico
 
