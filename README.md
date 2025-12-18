@@ -6,14 +6,12 @@ This project contains a demo to show how to use the Grapple Probe to debug a Ras
 
 The Pico comes with or without headers soldered on, the version with headers (Pico H) has a JST connector for the debug pins, and the version without headers (Pico) has through hole joints for the debug pins.  For the purpose of the demo a Pico H is used with an adapter like [this](https://www.adafruit.com/product/5765).
 
-![Image of probe connected](not_here.png)
+![Image of probe connected](docs-static/connected.png)
 
 1) Connect a ground pin on the Grapple Probe to the ground on the Pico.
 2) Connect the SWD pins on the Grapple Probe to the debug pins on the Pico.  DEBUG pin 9 to the SWCLK pin on the Pico, and DEBUG pin 7 to the SWDIO pin on the Pico.
 3) Connect the uart pins on the Grapple Probe to the uart pins on the Pico. COM pin 1 to pin 1 (GP0/UART0_TX) on the Pico, and COM pin 2 to pin 2 (GP1/UART0_RX) on the Pico.
 4) Connect power using either the 5 V Key from the Grapple Probe, or connect the USB port on the Pico.  For 5 V Key connect either DEBUG pin 19 or COM pin 7 to pin 40 (VBUS) on the Pico.
-
-![Diagram of the connections](not_yet.png)
 
 ## rust-pico
 
@@ -79,3 +77,5 @@ With the extensions and prerequisites installed you can run the premade launch c
 3. Press the Play button
 
 At this point you should be greeted with the VSCode debugging interface and you can set breakpoints, step through code, inspect registers, and more.
+
+![VSCode Debug Session](docs-static/vscode_debug_session.png)
