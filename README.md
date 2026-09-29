@@ -2,6 +2,10 @@
 
 This project contains a demo to show how to use the Grapple Probe to debug a Raspberry Pi Pico.
 
+## Video
+[![Pico Demo](https://img.youtube.com/vi/Wps7RxxAwfg/0.jpg)](https://www.youtube.com/watch?v=Wps7RxxAwfg)
+
+
 ## Connecting the Pico
 
 The Pico comes with or without headers soldered on, the version with headers (Pico H) has a JST connector for the debug pins, and the version without headers (Pico) has through hole joints for the debug pins.  For the purpose of the demo a Pico H is used with an adapter like [this](https://www.adafruit.com/product/5765).
